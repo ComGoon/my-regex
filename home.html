@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My form validation</title>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <script src="validation.js" async></script>
+  </head>
+  <body>
+    <h1>Com Goon</h1>
+    <form action="#">
+      <fieldset>
+        <legend>Form validation with js regex:</legend>
+        <!-- form two letters to 20, one word, - is allowed -->
+        <input type="text" name="username" placeholder="username" required />
+        <p>Letter, digits, "-" and "_" only. 2-20 long</p>
+
+        <!-- no other special char allowed than @ and ., must be and email format -->
+        <input type="email" name="mail" placeholder="email" required />
+        <p>Start with a letter, e.g: com-goon@yandex.com.io</p>
+
+        <!-- only digits, of 8 long -->
+        <input type="tel" name="tel" placeholder="phone" required />
+        <p>8 digits long or +227 12345678</p>
+
+        <!-- least 6, combination of strings, numbers, and special char. lower and upper char -->
+        <input type="password" name="pwd" placeholder="password" required />
+        <p>At least, 6 long. At most, 12 long</p>
+
+        <input id="sub" type="submit" name="sub" value="submit" />
+      </fieldset>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  background: gold;
+  font-family: Courier, "Courier New", monospace;
+  font-size: 130%;
+}
+
+h1 {
+  text-align: center;
+}
+
+form {
+  width: 50%;
+  margin: 0 auto;
+}
+
+form fieldset {
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+}
+
+form input {
+  height: 34px;
+  width: 90%;
+  margin: 3% auto;
+  font-size: 1em;
+  border-radius: 3px;
+  /* border-color: transparent; */
+}
+
+form input:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: none;
+}
+
+form p {
+  margin: 0 25px;
+  display: none;
+}
+
+form #sub {
+  width: 150px;
+  margin-left: 25px;
+}
+input:focus {
+  /* outline: none; */
+  /* border: 2px solid red; */
+}
